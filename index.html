@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Bookshelf App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body id="body">
+    <div id="bookFormBox" class="book-form-box" style="display: none;">
+      <div class="book-form">
+        <h1 class="book-form-title">Book form</h2>
+        <form action="javascript:void()" id="bookForm">
+          <input type="id" name="id" style="display: none;">
+          <input type="text" name="title" placeholder="Book Title">
+          <input type="text" name="author" placeholder="Book Author">
+          <input type="number" name="year" placeholder="Book Release Year">
+          <div class="checkbox">
+            <input type="checkbox" name="completed"> Is Completed (?)
+          </div>
+          <input type="submit" name="method" value="Create"/>
+        </form>
+      </div>  
+    </div>
+
+    <header class="header">
+      <div class="header-navbar">
+        <ul>
+          <li><a href="index.html">Bookshelf App</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div id="content">
+        <div id="content-body">
+          <div id="bookshelfMenu" class="bookshelf-menu">
+            <ul>
+              <li class="active">
+                <a href="javascript:void(0)" data-menu="currentlyReading">Currently Reading</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" data-menu="completed">Completed</a>
+              </li>
+            </ul>
+
+            <button id="showCreateBookBtn">Add new book</button>
+          </div>
+
+          <div id="searchbar" class="searchbar">
+            <input id="searchInput" type="text" placeholder="Search books by title">
+          </div>
+
+          <div id="bookshelf" class="bookshelf">
+          
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <span>2022 | Created by <a href="http://dzakwandawsie.github.io" target="_blank" title="Dzakwan Dawise Dicoding's Profile">Dzakwan Dawsie</a> &nbsp;</span>
+        <a href="https://github.com/DzakwanDawsie" target="_blank" title="Dzakwan Dawsie's Github">
+          <img src="assets/img/github.png">
+          <span>&nbsp;Github</span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="assets/js/bookshelf.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
